@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BumDec</title>
+    <script src=" {% static 'https://kit.fontawesome.com/d08fabf725.js' %}" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static '/style/style.css' %}">
+    <script src="{% static '/scripts/scripts.js' %}"></script>
+    <link rel="website icon" type="png" href="{% static '/img/Logos BumDec/Modo obscuro/Sin Letra/bumdeko.png' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="{% url 'index' %} "><img src="{% static '/img/Logos BumDec/Modo obscuro/Sin Letra/bumdeko.png' %}" alt=""></a>
+         </div>
+        <nav>
+            <ul class="navBar ">
+                <!-- <li><a class="blank-f" href="{% url 'Tienda' %}">Productos</a></li> -->
+                <li><a class="blank-f" href="{% url 'Nosotros' %}">Nosotros</a></li>
+                <li><a class="blank-f" href="{% url 'Ayuda' %}">Ayuda</a></li>
+                <li><a class="blank-f" href="{% url 'Tienda' %}">Tienda</a></li>
+            </ul>
+        </nav>
+        <a href="{% url 'login' %}" class="btn"><button class="blank-f">Comenzar</button></a>
+    </header>
+
+    <div class="caja1" >
+        
+        <p class="palabra blank-f">
+            <b class="tittle blue-f">B</b>um<b class="tittle blue-f">D</b>ec 
+            <!-- <img src="{% static '/img/Logos BumDec/Modo obscuro/Letra negrita/bumdeko.png' %}" alt=""> -->
+            <b class="des">Siente la música de una forma diferente </b>
+            <a href="{% url 'login' %}" class="btn-cover"><button>Comenzar</button></a>
+
+        </p>  
+    </div>
+
+        <div class="caja3">
+            <h2 class="titulos blank-f"> <span class="blue-f titulos">¿Q</span>ué es <span class="blue-f titulos">B</span>um<span class="blue-f titulos">D</span>ec<span class="blue-f titulos">?</span></h2>
+            <!-- <img src="{% static '/img/Logos BumDec/Modo obscuro/Letra negrita/bumdeko2.png' %}" alt=""> -->
+            <p class="caja3-text blank-f">BumDec VR es una aplicación de realidad virtual en la cual a través de lentes de realidad virtual, te puedes meter a escenarios o mundos relacionados con tus canciones o álbumes favoritos.
+
+            </p>
+        </div>
+
+
+
+    <div class="caja2 black-bg">
+
+
+        <h2 class="titulos blue-f">
+            Álbumes
+        </h2>
+        
+    <div class="galeria">
+        <img class="gal-img" src="{% static '/img/albumes/Blackparadecover.jpg' %}" alt="">
+
+        <img src="{% static '/img/albumes/favorite.jpg' %}" alt="" class="gal-img">
+
+        <img src="{% static '/img/albumes/three.jpg' %}" alt="" class="gal-img">
+
+        <img src="{% static '/img/albumes/am.jpg' %}" alt="" class="gal-img">
+    </div>
+
+    
+    
+    <p class="caja2-text white-f"> BumDec cuenta con escenarios inspirados en varias canciones y álbumes. <br>
+        Nosotros como equipo desarollador somos los encargados de recrear estos escenarios <br>
+        e implementarlos de manera correcta para que los usuarios puedan sentir el ambiente y la inmersividad de la canción.
+    </p>
+    </div>
+
+
+
+    <div class="caja4 -bg">
+        <h2 class="titulos blank-f">Escenarios</h2>
+
+        <div class="escenarios blank-f">
+            <div><h1><center>The Black Parade</center></h1><img src="{% static '/img/escenario2.jpg' %}" alt=""><h3><center>By My Chemical Romance</center></h3></div>
+            <div><h1><center>Flourecent Adolescent</center></h1><img src="{% static '/img/escenario3.jpg' %}" alt=""><h3><center>By Arctic Monkeys</center></h3></div>
+        </div>
+    </div>
+
+
+    <div class="caja5 black-bg">
+
+        <h2 class="titulos blank-f">Tienda en línea</h2>
+
+        <div class="planes">
+            <div class="opcion1 gray-bg">
+                <h3 class="titulos blue-f">
+                    Comprar <br>Mercancía
+                </h3>
+                <ul class="blank-f">
+                    <li>Álbumes de Arctic Monkeys y My Chemical Romance en CD.</li>
+                    <li>Mercancía de ropa de Arctic Monkeys y My Chemical Romance.</li>
+                </ul>
+
+                <a href="{% url 'login' %}" class="btn-plan"><button class="blank-f">Comprar</button></a>
+            </div>
+
+            <div class="opcion2 gray-bg">
+                <h3 class="titulos blue-f">
+                    Comprar <br>Aplicación VR 
+                </h3>
+
+                <ul class="blank-f">
+                    <li>Aplicación VR de escenarios virtuales.</li>
+                    <li>Aplicación AR de modelos interactivos sobre álbumes.</li>
+                </ul>
+                <a href="{% url 'login' %}" class="btn-plan"><button class="blank-f">Comprar</button></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
+
+
+<!-- 
+╔═══╗ ♪
+║███║ ♫
+║ (●) ♫
+╚═══╝♪♪
+
+By Tlatolk
+-->

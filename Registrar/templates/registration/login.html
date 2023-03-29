@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BumDec</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="{% static 'https://kit.fontawesome.com/d08fabf725.js' %}" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static '/style/style.css' %}">
+    <script src="{% static '/scripts/scripts.js' %}"></script>
+    <link rel="website icon" type="png" href="{% static '/img/Logos BumDec/Modo obscuro/Sin Letra/bumdeko.png' %}">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v16.0&appId=758581715509141&autoLogAppEvents=1" nonce="onkYwGFs"></script>
+
+<div class="signupFrm">
+    <form action="" class="form gray-bg blank-f" method="POST">
+        
+        <h1 class="title">Iniciar Sesión</h1>
+        {% csrf_token %}
+        
+        
+        <div class="inputContainer">
+            <label for="id_username" class="label">Usario</label>
+            <input type="text" class="input" name="username" autofocus="" autocapitalize="none" maxlength="150" required="" id="id_username">
+            
+        </div>
+
+        <div class="inputContainer">
+            <label for="id_password" class="label">Contraseña</label>
+            <input type="password" class="input" name="password" required="" id="id_password">
+        </div>
+
+        
+        <div class="btn">
+        
+        <button type="submit" class="btn btn-outline-link" ><a href="">Entrar</a></button> <br>
+        <button type="submit" class="btn btn-outline-link"><a href="{% url 'index' %} ">Regresar</a></button> <br>
+        <button type="submit" class="btn btn-outline-link"><a href="{% url 'signup' %}">Crear una Cuenta</a></button>
+        
+        </div>
+    </form>
+</div>
+
+</body>    
+</html>

@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BumDec</title>
+    <script src="{% static 'https://kit.fontawesome.com/d08fabf725.js' %}" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static '/style/style.css' %}">
+    <script src="{% static '/scripts/scripts.js' %}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="website icon" type="png" href="{% static '/img/Logos BumDec/Modo obscuro/Sin Letra/bumdeko.png' %}">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v16.0&appId=758581715509141&autoLogAppEvents=1" nonce="onkYwGFs"></script>
+
+<div class="signupFrm">
+    <form action="" class="form gray-bg blank-f" method="POST" id="Form">
+        {% csrf_token %}
+        
+        <h1 class="title">Registrarse</h1>
+        
+        <!-- 
+        <div class="inputContainer">
+            <label for="" class="label">Email</label>
+            <input type="text" class="input" placeholder="a">
+           
+        </div>
+
+        -->
+
+        <div class="inputContainer">
+            <label for="id_username" class="label">Usario</label><br>
+            <input type="text" class="input" name="username" maxlength="150" autocapitalize="none" autofocus="" required="" id="id_username"><br>
+        </div>
+
+        <div class="inputContainer">
+            <label for="id_password1" class="label">Contraseña</label>
+            <input type="password" class="input" name="password1" autocomplete="new-password" required="" id="id_password1"> <br>
+        </div>
+
+        <div class="inputContainer">
+            <label for="id_password2" class="label">Confirmar contraseña</label>
+            <input type="password" class="input" name="password2" autocomplete="new-password" required="" id="id_password2"> <br>
+        </div>
+        <div class="btn">
+            <button type="submit" class="btn btn-outline-link" ><a href="">Entrar</a></button> <br>
+            <button type="submit" class="btn btn-outline-link"><a href="{% url 'index' %} ">Regresar</a></button> <br>
+        </div>
+    </form>
+</div>
+
+</body>    
+</html>

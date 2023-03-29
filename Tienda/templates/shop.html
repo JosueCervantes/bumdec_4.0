@@ -1,0 +1,177 @@
+{% block content %}
+{% if user.is_authenticated %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BumDec</title>
+    <script src="{% static 'https://kit.fontawesome.com/d08fabf725.js' %}" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static '/style/style.css' %}">
+    <script src="{% static '/scripts/scripts.js' %}"></script>
+    <link rel="website icon" type="png" href="{% static '/img/Logos BumDec/Modo obscuro/Sin Letra/bumdeko.png' %}">
+</head>
+
+<body>
+
+
+
+    <header class="header">
+        <div class="logo">
+           <a href="{% url 'index' %} "><img src="{% static '/img/Logos BumDec/Modo obscuro/Sin Letra/bumdeko.png' %}" alt=""></a>
+        </div>
+        <nav>
+            <ul class="navBar ">
+                <li><a class="blank-f" href="{% url 'Tienda' %}">Tienda</a></li>
+                <li><a class="blank-f" href="{% url 'Nosotros' %}">Nosotros</a></li>
+                <li><a class="blank-f" href="{% url 'Ayuda' %}">Ayuda</a></li>
+                <li><a class="blank-f" href="{% url 'logout' %}">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+
+    <div class="caja1">
+
+
+        <div class="bumDec">
+                <div class="descBum">
+                    <h2 class="titulos blue-f">
+                        BumDec VR
+                    </h2>
+                <ul class="blank-f">
+                    <li>Conecta con la música</li>
+                    <li>Se parte de ella</li>
+                    <li>A un click de ti.</li>
+                </ul>
+        
+                <a href="" class="btn-plan"><button class="blank-f">Comprar</button></a>
+                </div>
+
+            <div class="desc ">
+
+                <h2 class="titulos blank-f">¿Porqué adquirirlo?</h2>
+                <p class="blank-f">
+                    BumDec VR es una aplicación de realidad virtual a la cual te dejará meterte en tus escenarios de música favoritos. Podrás ver de cerca el mundo que solo puedes sentir a través de la música. 
+                </p>
+            </div>    
+        
+
+        </div>
+
+
+
+    </div>
+
+    <div class="caja2 ">
+    
+    
+        <h2 class="titulos blue-f">
+            Adquiere tu Álbum Favorito en CD
+        </h2>
+    
+        <div class="albums">
+
+            <div class="target gray-bg">
+
+            <img class="gal-img" src="{% static '/img/Blackparadecover.jpg' %}" alt="">
+            <p class="blank-f">
+            Welcome to the Black Parade
+            <b class="blue-italic">My Chemical Romance</b>
+            </p>
+            <a href="" class="btn-plan"><button class="blank-f">Comprar</button></a>
+            </div>
+
+            <div class="target gray-bg">
+            <img src="{% static '/img/interpol.jpg' %}" alt="" class="gal-img">
+
+            <p class="blank-f">
+                Three Cheers for Sweet Revenge
+                <b class="blue-italic">My Chemical Romance</b>
+            </p>
+
+                <a href="" class="btn-plan"><button class="blank-f">Comprar</button></a>
+            </div>
+
+            <div class="target gray-bg">
+            <img src="{% static '/img/artworks-9c2118d6-75cb-4c6b-b6f9-17d7bb442e06-0-t240x240.jpg' %}" alt="" class="gal-img">
+
+            <p class="blank-f">
+                I brought you my bullets, you brought me your love
+                <b class="blue-italic">My Chemical Romance</b>
+            </p>
+
+                <a href="" class="btn-plan"><button class="blank-f">Comprar</button></a>
+            </div>
+
+            <div class="target gray-bg">
+            <img src="{% static '/img/artworks-a9M96MXzxvJ849da-tyFqfg-t500x500.jpg' %}" alt="" class="gal-img">
+
+            <p class="blank-f">
+               Danger Days
+               <b class="blue-italic">My Chemical Romance</b>
+            </p>
+
+                <a href="" class="btn-plan"><button class="blank-f">Comprar</button></a>
+            </div>
+
+            <div class="target gray-bg">
+
+                <img class="gal-img" src="{% static '/img/artworks-a9M96MXzxvJ849da-tyFqfg-t500x500' %}" alt="">
+                <p class="blank-f">
+                Favorite Worst Nightmare
+                <b class="blue-italic">Arctic Monkeys</b>
+                </p>
+                <a href="" class="btn-plan"><button class="blank-f">Comprar</button></a>
+                </div>
+    
+                <div class="target gray-bg">
+                <img src="{% static '/img/interpol.jpg' %}" alt="" class="gal-img">
+    
+                <p class="blank-f">
+                    AM
+                    <b class="blue-italic">Arctic Monkeys</b>
+                </p>
+    
+                    <a href="" class="btn-plan"><button class="blank-f">Comprar</button></a>
+                </div>
+    
+                <div class="target gray-bg">
+                <img src="{% static '/img/artworks-9c2118d6-75cb-4c6b-b6f9-17d7bb442e06-0-t240x240.jpg' %}" alt="" class="gal-img">
+    
+                <p class="blank-f">
+                    Whatever people say i am that's what i'm not
+                    <b class="blue-italic">Arctic Monkeys</b>
+                </p>
+    
+                    <a href="" class="btn-plan"><button class="blank-f">Comprar</button></a>
+                </div>
+    
+                <div class="target gray-bg">
+                <img src="{% static '/img/artworks-a9M96MXzxvJ849da-tyFqfg-t500x500.jpg' %}" alt="" class="gal-img">
+    
+                <p class="blank-f">
+                   The Car
+                   <b class="blue-italic">Arctic Monkeys</b>
+                </p>
+    
+                    <a href="" class="btn-plan"><button class="blank-f">Comprar</button></a>
+                </div>
+
+        </div>
+    
+    </div>
+
+
+</body>
+
+</html>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">Log In</a>
+{% endif %}
+{% endblock %}

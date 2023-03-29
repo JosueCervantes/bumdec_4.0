@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BumDec</title>
+    <script src="{% static 'https://kit.fontawesome.com/d08fabf725.js' %}" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static '/style/style.css' %}">
+    <script src="{% static '/scripts/scripts.js' %}"></script>
+    <link rel="website icon" type="png" href="{% static '/img/Logos BumDec/Modo obscuro/Sin Letra/bumdeko.png' %}">
+</head>
+
+<body>
+
+
+
+    <header class="header">
+        <div class="logo">
+           <a href="{% url 'index' %} "><img src="{% static '/img/Logos BumDec/Modo obscuro/Sin Letra/bumdeko.png' %}" alt=""></a>
+        </div>
+        <nav>
+            <ul class="navBar ">
+                
+                <li><a class="blank-f" href="{% url 'Nosotros' %}">Nosotros</a></li>
+                <li><a class="blank-f" href="{% url 'Ayuda' %}">Ayuda</a></li>
+                <li><a class="blank-f" href="{% url 'Tienda' %}">Tienda</a></li>
+            </ul>
+        </nav>
+        <a href="{% url 'signup' %}" class="btn"><button class="blank-f">Regístrate</button></a>
+    </header>
+
+    <div class="we">
+        <img src="{% static '/img/we.png' %}" alt="">
+
+
+        <div class="desc">
+        <h2 class="titulos blank-f"><span class="blue-f ti">¿Q</span>uiénes <span class="blue-f ti">s</span>omos<span class="blue-f ti">?</span></h2>
+        <p class="blank-f">
+            BumDec está formado por nosotros 3, Angel, Josué y Javier. Este equipo de trabajo nació a raíz de un proyecto y desde entonces nos hemos dedicado a desarrollar aplicaciones enfocándonos más en la experiencia musical. Los tres somos grandes fans de la música, los gustos de los tres son variados y cada quién tiene su banda favorita. Es gracias a eso que nuestros proyectos siempre están enfocados en la experiencia de sentir la música de manera diferente. BumDec VR salió a la luz gracias a esa pasión que tenemos hacia la realidad virtual y a la música.
+        
+        </p>
+        </div>
+    </div>
+
+
+    
+
+    <div class="comentarios black-bg">
+       <h2 class="titulo blue-f">Desarrolladores</h2>
+        <div class="teamJaiba blank-f">
+
+        <div class="josue">
+            <h2>Josué</h2>
+            <img src="{% static '/img/fotona3.jpg' %}" alt="">
+            <p>
+                Hola, soy Josué y soy parte del equipo de desarrolladores de BumDec, estoy encargado del Backend; actalmente estoy estudiando Tecnologías de la Información, me siento más identificado con la arquitectura de software y su desarrollo por ello me gusta aprender lenguajes de programación y sus usos, así también disfruto apps móviles y proyectos de IoT, ya sea en español o francés.
+            </p>
+        </div>
+
+
+        <div class="javi">
+            <h2>Javi</h2>
+            <img src="{% static '/img/javiloko.png' %}" alt="">
+            <p>
+                Hola, actualmente estoy estudiando en la UTCH en la carrera de Tecnologías de la información especializado en Entornos Virtuales y Negocios Digitales. Tengo 19 años y soy la parte creativa y de diseño del equipo. Soy un gran fan de los videojuegos y siento que son una fuente de inspiración fuerte para mi. 
+            </p>
+        </div>
+
+        <div class="tlatolk">
+                <h2>Alfonso</h2>
+            <img src="{% static '/img/angela.png' %}" alt="">
+            <p>
+                Mi nombre es Alfonso, pero como desarrollador me conocen por mi sobrenombre Null, dentro del proyecto me dedico en el FrontEnd y colaborador Backend de la página, también llevo a cabo el desarrollo del software de VR para nuestro proyecto, soy un apasionado a la programación y al diseño, espero que sea de su agrado el diseño de esta página.
+            </p>
+        </div>
+        </div>
+        <img src="{% static '/img/bumdeko2.png' %}" alt=""> 
+    </div>
+
+</html>
